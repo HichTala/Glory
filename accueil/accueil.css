@@ -1,0 +1,25 @@
+.navMenu {
+  //background: linear-gradient(to top, #654BCE, #000);
+  position: fixed;
+  padding: 15px 30px 15px 30px;
+  left: 0px;
+  right: 0px;
+  word-spacing: 10px;
+  text-align: right;
+}
+
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+body {
+  background: #272727;
+}
+
+
