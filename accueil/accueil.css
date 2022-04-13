@@ -2,8 +2,8 @@
   //background: linear-gradient(to top, #654BCE, #000);
   position: fixed;
   padding: 15px 30px 15px 30px;
-  left: 0px;
-  right: 0px;
+  //left: 0;
+  right: 0;
   word-spacing: 10px;
   text-align: right;
 }
@@ -16,6 +16,7 @@
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
+  word-spacing: 1px;
 }
 
 body {
@@ -23,3 +24,45 @@ body {
 }
 
 
+.navMenu .underline {
+  width: 0;
+  height: 3px;
+  background: #f6f4e6;
+  border-radius: 50px;
+  opacity: 0;
+}
+
+.navMenu a:nth-child(1):hover ~ .underline {
+  width: 50px;
+  transform: translateX(20px);
+  transition: width 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .underline {
+  width: 50px;
+  transform: translateX(140px);
+  transition: width 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .underline {
+  width: 50px;
+  transform: translateX(270px);
+  transition: width 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .underline {
+  width: 50px;
+  transform: translateX(380px);
+  transition: width 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(5):hover ~ .underline {
+  width: 50px;
+  transform: translateX(490px);
+  transition: width 0.2s ease-in-out;
+  opacity: 1;
+}
