@@ -19,6 +19,7 @@
 
 body {
   background: #606060;
+  color : beige;
 }
 
 header{
@@ -79,4 +80,12 @@ hr.solid {
   background: linear-gradient(to left, #E1A128, #654BCE);
   height: 2px;
   border: transparent;
+}
+
+
+titre {
+  font-size: 1.8em;
+  font-style : bold;
+  color : beige;
+  text-align: center;
 }
