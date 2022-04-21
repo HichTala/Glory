@@ -2,6 +2,7 @@
   padding: 15px 15px 15px 15px;
   word-spacing: 10px;
   text-align: right;
+
 }
 
 .navMenu a {
@@ -15,14 +16,14 @@
   word-spacing: 1px;
 }
 
+header {
+  background: #404040;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
 
 body {
   background: #606060;
-}
-
-header{
-  background: #404040;
 }
 
 
@@ -40,33 +41,27 @@ header{
   background: linear-gradient(to left, #E1A128, #654BCE);
 }
 
-.navMenu a:nth-child(1):hover ~ .underline {
-  width: 50px;
-  transform: translateX(1325px);
-  transition: width 0.2s ease-in-out;
-  opacity: 1;
-}
-
 .navMenu a:nth-child(2):hover ~ .underline {
   width: 50px;
-  transform: translateX(1450px);
+  transform: translateX(1315px);
   transition: width 0.2s ease-in-out;
   opacity: 1;
 }
 
 .navMenu a:nth-child(3):hover ~ .underline {
   width: 50px;
-  transform: translateX(1580px);
+  transform: translateX(1450px);
   transition: width 0.2s ease-in-out;
   opacity: 1;
 }
 
 .navMenu a:nth-child(4):hover ~ .underline {
   width: 50px;
-  transform: translateX(1690px);
+  transform: translateX(1635px);
   transition: width 0.2s ease-in-out;
   opacity: 1;
 }
+
 
 .navMenu a:nth-child(5):hover ~ .underline {
   width: 50px;
