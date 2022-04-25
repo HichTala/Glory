@@ -1,3 +1,5 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 img {
   vertical-align:bottom;
   border-style:none
@@ -91,3 +93,55 @@ a {
   text-justify: inter-word;
   width: 900px;
 }
+
+.footer {
+  position:fixed;
+  display: flex;
+  align-items:center;
+  bottom:0;
+  left:0;
+  right: 0;
+  background:#101219;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-bottom: 10px;
+}
+
+.footer:before{
+  content: "";
+  background: linear-gradient(to left, #E1A128, #654BCE);
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: block;
+  transform: translateX(-25px);
+}
+
+.footer-logo {
+  margin-right: 0;
+}
+
+.social-icon {
+  color: #fff;
+}
+
+ul.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+  height: 100px;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin-right: auto;
+  margin-left: 0;
+}
+
