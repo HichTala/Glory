@@ -59,7 +59,7 @@
       <div class="bold">
         Inscrivez votre adresse mail et quelques informations afin de montrer l’engouement autour du projet
       </div>
-      <form action="../form" method="post">
+      <form action="Contact&Soutien-Remerciement.html" method="post">
         <div class="user-box">
           <input type="text" name="prenom" id="prenom" required="">
           <label for="prenom">Prénom</label>
@@ -73,7 +73,7 @@
           <label for="age">Age</label>
         </div>
         <div class="user-box">
-          <input type="text" name="departement" id="dep" required="">
+          <input type="select" name="departement" id="dep" required="">
           <label for="dep">Département</label>
         </div>
         <div class="user-box">
@@ -82,12 +82,13 @@
         </div>
         <div class="bold">Abonnez vous à la newsletter et soyez les premiers à tester la bêta</div>
         <div class="container">
-          <div class="checkbox">
-
+          <div class="checkbox marg-auto">
+            <input type="checkbox" id="checkbox" name="checkbox" required="">
+            <label for="checkbox"><span></span>J'accepte de recevoir ...</label>
           </div>
 
-          <div class="button">
-            <button type="submit">Envoyer le message</button>
+          <div class="button marg-auto bold">
+            <button type="submit">Rejoint l'aventure !</button>
           </div>
         </div>
       </form>
@@ -112,15 +113,8 @@
   </div>
 
 
-    <div class="text">
-
-
-
-      <!--case pour entrer le mail,
-      avec une case à cocher "j'accepte de recevoir..."-->
-      <br><br>
-      Enfin, le plus important, participez à nos premiers <a href="Evenements.html">évenements</a>
-      <!--bouton "j'y vais"-->
+    <div class="text event-page">
+      Enfin, le plus important, participez à nos premiers <a href="Evenements.html"><img class="logo-event" src="../image/event.svg" height="25"></a>
     </div>
 
   <footer class="footer">
