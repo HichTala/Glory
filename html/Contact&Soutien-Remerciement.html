@@ -7,6 +7,18 @@
   <meta charset="UTF-8">
   <title>Glory</title>
   <link rel="icon" href="../image/Logo_11.png"/>
+
+  <script>
+    window.onload = function() {
+      if (localStorage.glor) {
+        document.getElementById('glorien').innerHTML = localStorage.glor;
+      } else {
+        localStorage.glor = 0;
+        document.getElementById('glorien').innerHTML = localStorage.glor;
+      }
+    }
+  </script>
+
 </head>
 
 <body>
@@ -44,7 +56,9 @@
 
   <div class="glory-counter">
     Vous êtes le
-    <div class="counter">4</div>
+    <div class="counter">
+      <p class="glorien" id="glorien"></p>
+    </div>
     ème Glorien !
   </div>
 

@@ -33,6 +33,10 @@
   vertical-align: middle;
 }
 
+.glorien {
+  margin-top: 0px;
+}
+
 .container {
   display: flex;
   vertical-align: middle;

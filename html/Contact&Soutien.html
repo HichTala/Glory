@@ -7,6 +7,40 @@
   <meta charset="UTF-8">
   <title>Glory</title>
   <link rel="icon" href="../image/Logo_11.png"/>
+
+  <script>
+
+    var db = openDatabase('newsletter', '1.0', 'Information pour la news letter', 2 * 1024 * 1024);
+
+    db.transaction(function (tx) {
+      tx.executeSql('CREATE TABLE IF NOT EXISTS infos (id unique, prenom, nom, dep, age, mail)');
+    });
+
+    window.onload = function() {
+      if (localStorage.glor) {
+        document.getElementById('glorien').innerHTML = localStorage.glor;
+      } else {
+        localStorage.glor = 0;
+        document.getElementById('glorien').innerHTML = localStorage.glor;
+      }
+    }
+
+
+    function submit_infos() {
+      var prenom = document.getElementById("prenom").value;
+      var nom = document.getElementById("nom").value;
+      var dep = document.getElementById("dep").value;
+      var age = document.getElementById("age").value;
+      var mail = document.getElementById("mail").value;
+
+      localStorage.glor = Number(localStorage.glor) +1;
+
+      db.transaction(function (tx) {
+        tx.executeSql('INSERT INTO infos (id, prenom, nom, dep, age, mail) VALUES (?, ?, ?, ?, ?, ?)', [Number(localStorage.glor), prenom, nom, dep, age, mail]);
+      });
+    }
+  </script>
+
 </head>
 
 <body>
@@ -44,7 +78,9 @@
 
     <div class="glory-counter">
       Vous êtes le
-      <div class="counter">4</div>
+      <div class="counter">
+        <p class="glorien" id="glorien"></p>
+      </div>
       ème Glorien !
     </div>
 
@@ -89,7 +125,7 @@
             </div>
 
             <div class="button marg-auto bold">
-              <button type="submit">Rejoint l'aventure !</button>
+              <button type="submit" onclick="submit_infos()">Rejoint l'aventure !</button>
             </div>
           </div>
         </form>
